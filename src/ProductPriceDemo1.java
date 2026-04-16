@@ -12,7 +12,7 @@ public class ProductPriceDemo1 {
 
         System.out.println("All Products:");
         for (Map.Entry<String,Double> x:products.entrySet()){
-            System.out.println("ID : " + x.getKey() + ", name: " + x.getValue());
+            System.out.println("product name : " + x.getKey() + ", price: " + x.getValue());
         }
 
         System.out.println("\nPrice of 'Laptop':" + products.get("Laptop"));
@@ -23,13 +23,13 @@ public class ProductPriceDemo1 {
         products.put("Keyboard", 40.00);
         System.out.println("\nAfter updating 'Keyboard':");
         for (Map.Entry<String,Double> x:products.entrySet()){
-            System.out.println("ID : " + x.getKey() + ", name: " + x.getValue());
+            System.out.println("product name : " + x.getKey() + ", price: " + x.getValue());
         }
 
         products.remove("Headphones");
         System.out.println("\nAfter removing 'Headphones':");
         for (Map.Entry<String,Double> x:products.entrySet()){
-            System.out.println("ID : " + x.getKey() + ", name: " + x.getValue());
+            System.out.println("product name : " + x.getKey() + ", price: " + x.getValue());
         }
 
         System.out.println("\nTotal number of products:" + products.size());
